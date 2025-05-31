@@ -1,0 +1,35 @@
+name: Run hello.py
+ 
+on:
+
+  push:
+
+    branches:
+
+      - main  # ou 'master' selon ton dépôt
+ 
+jobs:
+
+  run-script:
+
+    runs-on: ubuntu-latest
+ 
+    steps:
+
+      - name: Checkout repository
+
+        uses: actions/checkout@v3
+ 
+      - name: Set up Python
+
+        uses: actions/setup-python@v5
+
+        with:
+
+          python-version: '3.11'  # ou autre version souhaitée
+ 
+      - name: Run hello.py
+
+        run: python hello.py
+
+ 
