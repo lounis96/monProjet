@@ -28,8 +28,8 @@ jobs:
 
           python-version: '3.11'  # ou autre version souhaitée
  
-      - name: Run hello.py
+      - name: Run main.py
 
-        run: python hello.py
+        run: python main.py
 
  
